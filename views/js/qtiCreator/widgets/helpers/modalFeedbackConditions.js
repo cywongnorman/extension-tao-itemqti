@@ -155,7 +155,7 @@ define([
         $select.siblings('.feedbackRule-compared-value')
             .show()
             .off('keyup' + _ns)
-            .on('keyup' + _ns, '.feedbackRule-compared-value', function(){
+            .on('keyup' + _ns, function(){
 
                 var fbRule = response.getFeedbackRule($(this).parents('.feedbackRule-container').data('serial'));
 

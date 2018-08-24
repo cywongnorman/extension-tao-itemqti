@@ -65,7 +65,7 @@ define([
         this.widget.$container.off('.active');
         areaBroker.getContentCreatorPanelArea().off('.active.'+ this.widget.serial);
 
-        var item = this.widget.element.getRootElement();
+        item = this.widget.element.getRootElement();
         if(item && item.data('widget')){
             item.data('widget').$container.off('.active');
         }
